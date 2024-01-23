@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 2px;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/******** LANDING PAGE **********/
+#landing{
+    
+    background: linear-gradient(180deg, rgba(59,139,235,1) 0%, rgba(77,154,247,1) 47%, rgba(119,192,244,1) 100%);
+    color: #E7E3D4;
+    margin-top: 20%;
+    text-align: right;
+}
+#landing h1{
+    margin-left: 10%;
+    color: #B23850;
+    font-size: 80px;
+    text-align: left;
+}
+#landing p{
+    margin-left: 10%;
+    font-size: 20px;
+    text-align: left;
+}
+#landing img{
+    margin-top: -10%;
+    margin-right: 20%;
+    font-size: 50px;
+    text-align: right;
+}
+#landing a{
+    margin-right: 25%;
+    font-size: 20px;
+    padding: 10px;
+    color: #E7E3D4;
+    text-decoration: none;
+    line-height: 60px;
+    background: #3B8BEB;
+    width: 100px;
+    height: 110px;
+    border-radius: 20%;
+    border-color: #E7E3D4;
+}
+
+/******** NAVIGATION **********/
+nav{
+    background-color: #B23850;
+    margin-top: -5px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    position: relative;
+    text-align: right;
+}
+nav ul li a{
+    color:black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+/******** HOME **********/
+body{
+    background: #E7E3D4;
+    color:rgb(59, 57, 57);
+}
+.homeimage{
+    align-content: center;
+    padding: 2%;
+    margin-left: 150px;
+}
