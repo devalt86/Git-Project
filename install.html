@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gitproject.css">
+    <title>Installation</title>
+</head>
+<body id="bodyinstall">
+    <nav>
+        <ul id="menu">
+            <li><a href="git-project.html">Home</a></li>
+            <li><a href="#">Set-up and Install</a></li>
+            <li><a href="#">Git Operations</a></li>
+        </ul>
+    </nav><!-- closing for navigation -->
+    <div class="sidenav"><!-- side nav -->
+        <a href="git-project.html">Home</a>
+        <a href="#">Set-up and Install</a>
+        <a href="#">Git Operations</a>
+      </div><!-- closing for side nav -->
+    <h1>Set-up Git and VS Code</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h2>Install homebrew</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <ol id="numberlist">
+        <li>Navigate to the Homebrew website to copy the code to install. (https://brew.sh)</li>
+        <li>Open Terminal if you are using MacOS, other if you are using Windows.</li>
+        <li>Paste the code.</li>
+            <ul id="bulletlist">
+                <li>Checking for `sudo` access (which may request your password)... may appear.</li>
+            </ul>
+        <li>Type your computer's administrator password when prompted.</li>
+            <ul id="bulletlist">
+                <li>The password is invisible for security. You can type anyway and press Return (Enter).</li>
+                <li>A Sorry, try again. prompt will appear as if it is wrong. You can just type your password again.</li>
+            </ul>
+    </ol>
+    <p>The Homebrew installation begins, letting you know what is installed and what directories are created. 
+        Mid-installation, you can press Return (Enter) to continue. The entire installation may take about 30 minutes.</p>
+
+    <p>You can then follow the next steps in Terminal after installation.</p>
+    <p>Run these two commands in your terminal to add Homebrew to your PATH:
+        (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/ashley/.zprofile
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+        - Run brew help to get started
+        - Further documentation: https://docs.brew.sh
+        Should be just one line: eval "$(/opt/homebrew/bin/brew shellenv)"</p>
+    <h2>Install Git and Configure within VS Code</h2>
+    <p>Install Git by typing the command: brew install git.</p>
+
+</body>
+</html>
