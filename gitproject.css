@@ -110,7 +110,7 @@ body{
   .sidenav a:hover {
     color: #B23850;
   }
-#bodyinstall{
+#bodypages{
     max-width: 1200px;
     height: 2000px;
     line-height: 25px;
@@ -137,4 +137,10 @@ p{
 li{
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+/******** REMOTE REPOSITORY PAGE **********/
+#standalonebullet{
+    padding-left: 24%;
+
 }

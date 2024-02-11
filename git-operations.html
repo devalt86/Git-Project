@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Operations</title>
+    <link rel="stylesheet" href="gitproject.css">
+</head>
+<body id="bodypages">
+    <div class="sidenav"><!-- side nav -->
+        <a href="index.html">Home</a>
+        <a href="install.html">Set-up and Install</a>
+        <a href="#">Git Operations</a>
+        <a href="remote-repository.html">Remote Repository</a>
+      </div><!-- closing for side nav -->
+
+      <h1>Working on Files With Git and VS Code</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h2>Basic Git Operations in VS Code</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <ol id="numberlist">
+            <li>In the VS Code menu bar, click Terminal</li>
+            <li>Begin creating your html and CSS pages.</li>
+            <li>Once you are ready to commit, click the Source Control icon.</li>
+            <li>Click commit.</li>
+            <li>When prompted, type git commit -m "first commit" (name your commit).</li>
+            <li>Click the check mark in the upper-right of VS Code.</li>
+            <li>You can also perform these basic Git operations in the Terminal box:</li>
+                <ul id="bulletlist">
+                    <li><b>Status</b>: git status displays the branch you are in and any files in red that have not been committed.</li> 
+                    <li><b>Add</b>: git add <file> displays in green the specific files you want to add to commit, or git add . to display all 
+                        files to add to the commit.</li>
+                    <li><b>Commit</b>: git commit -m “your message as a regular sentence will be the title of the commit”. (If you are already 
+                        on the main branch, this command updates the files in the GitHub repository.)</li>
+                    <li><b>Pull</b>: git pull gets all latest changes from GitHub server and puts on your computer. Make sure on master branch 
+                        to pull any changes you may need to know about. With a pull request you are proposing that your changes in a 
+                        separate branch should be merged (pulled in) with the main branch.</li>
+                    <li><b>Push</b>: git push origin <name of branch> pushes the files to the GitHub repository to merge with the main branch.</li>
+                </ul>
+        </ol>
+        <p>The command git push -u origin [branch] is useful when pushing a new branch. This creates an upstream tracking branch with a lasting 
+            relationship to your local branch.</p>
+        
+        <h2>Branching with VS Code</h2>
+        <p>When you created your first repository in GitHub, the main branch was automatically created. 
+            You want to switch branches before beginning any changes to a project, so your main branch is not affected.</p>
+        <p>To do that, you can type git checkout -b [naming convention] (ex. git checkout -b ashley/creating-a-how-to).
+            You can also click the ellipses (…) at the top of the VS Code side navigation, click Checkout to…, Create a new branch from…, then type the command.</p>
+        <p>At this point, you can add new folders and files, or make changes to/update your files. 
+            If you are working on multiple tasks at once, you can create a new branch for each task and switch between branches so one does 
+            not affect the other, or the main branch.</p>
+        <p>Note: You want to commit changes in one branch before switching to another. This prevents tasks in one branch from being mixed in with tasks from another branch.</p>
+
+</body>
+</html>
