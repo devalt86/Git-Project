@@ -7,67 +7,73 @@
     <title>Remote Repository</title>
     <link rel="stylesheet" href="gitproject.css">
 </head>
-<body id="bodypages">
+<body>
+    <nav>
+        <ul id="menu">
+            <li><img src="images/woman.png" class="logo" width="60" height="60"></li>
+            <li>Welcome!</li>
+        </ul>
+    </nav><!-- closing for navigation -->
+
     <div class="sidenav"><!-- side nav -->
         <a href="index.html">Home</a>
         <a href="install.html">Set-up and Install</a>
         <a href="git-operations.html">Git Operations</a>
-        <a href="#">Remote Repository</a>
+        <a href="#">Remote Repository <</a>
     </div><!-- closing for side nav -->
 
     <h1>Remote Repositories and VS Code</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    <p class="steps">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
         irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <h2>Working with Remote Repositories</h2>
-    <p>If you're the only person working on your project, you may never need to set up a remote repository. Developers use a remote 
+    <p class="steps">If you're the only person working on your project, you may never need to set up a remote repository. Developers use a remote 
         repository when sharing data with teammates.</p>
-    <p>Remote repositories are versions of your project hosted on the internet or local network, accessible for all team members. 
+    <p class="steps">Remote repositories are versions of your project hosted on the internet or local network, accessible for all team members. 
         The actual work on your project happens in your local repository, then those changes are uploaded to a remote repository 
         to share; they are not usually used for working on files.</p> 
-    <p>To clone a remote repository from GitHub to VS Code takes a few clicks.</p>
+    <p class="steps">To clone a remote repository from GitHub to VS Code takes a few clicks.</p>
         <ol id="numberlist">
-            <li>Click the ellipses (…) at the top of the VS Code side navigation</li>
-            <li>Hover over Remote</li>
-            <li>Click Add Remote</li>
-            <li>Copy and paste the shared repository's URL</li>
+            <li>Click the ellipses (…) at the top of the VS Code side navigation.</li>
+            <li>Hover over <b>Remote</b>.</li>
+            <li>Click <b>Add Remote</b>.</li>
+            <li>Copy and paste the shared repository's URL.</li>
         </ol>
-    <p>You can verify the remote repository is on your computer by typing the following commands in the VS Code Terminal:</p>
+    <p class="steps">You can verify the remote repository is on your computer by typing the following commands in the VS Code Terminal:</p>
         <ul id="standalonebullet">
             <li>git remote -v</li>
             <li>origin  https://github.com/OWNER/REPOSITORY.git (fetch)</li>
             <li>origin  https://github.com/OWNER/REPOSITORY.git (push)</li>
         </ul>
-    <p>The first one is the "fetch URL" for reading access. The second is the "push URL" to write data to the remote.</p>
-    <p>To add and manage files before pushing to the remote repository, you will need to switch to that repository's directory.</p>
+    <p class="steps">The first one is the "fetch URL" for reading access. The second is the "push URL" to write data to the remote.</p>
+    <p class="steps">To add and manage files before pushing to the remote repository, you will need to switch to that repository's directory.</p>
         <ol id="numberlist">
-            <li>Type cd <repository-name>.</li>
-            <li>Once you change the directory, type git branch to make sure you are on the main branch.</li>
+            <li>Type <b>cd [repository-name]</b>.</li>
+            <li>Once you change the directory, type <b>git branch</b> to make sure you are on the main branch.</li>
             <li>Type <b>git pull</b> to receive all the latest changes from the GitHub server to your computer.</li>
-            <li>From the main branch, type git checkout -b <naming convention> (ex. ashley/creating-a-how-to) to create a new branch so the main branch isn't affected.</li>
+            <li>From the main branch, type git checkout -b [naming convention] (ex. ashley/creating-a-how-to) to create a new branch so the main branch isn't affected.</li>
                 <ul id="bulletlist">
                     <li>It is best practice to have your name in the branch so your teammates know who made changes.</li> 
                 </ul>
         </ol>
-    <p>You are now ready to work on your files.</p>
+    <p class="steps">You are now ready to work on your files.</p>
     <h2>Push and Merge Your Files</h2>
-    <p>When you're done creating, updting, and/or managing your files, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    <p class="steps">When you're done creating, updting, and/or managing your files, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <ol id="numberlist">
-            <li>Type make clean and hit enter to clean out your directory and implement everything.</li>
-            <li>Type git add . (all) or git add <file name> to add the files you want to commit.</file>
-            <li>Type git commit -m <“your message as a regular sentence will be the title of the commit”> to commit your changes so you can push them the main branch.</li>
-            <li>Type git pull --rebase origin main to pull the latest changes your teammates might have made.</li>
-            <li>Type git push origin <name of branch> to push the files to the shared GitHub repository.</li>
+            <li>Type <b>git add .</b> (all) or <b>git add</b> <file name> to add the files you want to commit.</file>
+            <li>Type <b>git commit -m [“your message as a regular sentence will be the title of the commit”]</b> to commit your changes so you can push them the main branch.</li>
+            <li>Type <b>git pull --rebase origin main</b> to pull the latest changes your teammates might have made.</li>
+            <li>Type <b>git push origin [name of branch]</b> to push the files to the shared GitHub repository.</li>
                 <ul id="bulletlist">
                     <li>A pull request suggestion should pop up.</li>
                     <li>You can either copy the address or navigate to the shared repository's main page and the corresponding pull request banner should be displayed.</li>
                 </ul>
-            <li>Click Create a Pull Request.</li>
+            <li>Click <b>Create a Pull Request</b>.</li>
         </ol>
-    <p>If all is correct, you can click Squash and Merge, then Confirm Squash and Merge. 
-        There should be a message of Pull request successfully merged and closed.</p>
-    
+    <p class="steps">If all is correct, you can click <b>Squash and Merge</b>, then <b>Confirm Squash and Merge</b>. 
+        There should be a message of <b>Pull request successfully merged and closed</b>.</p>
+    <br>
 </body>
 </html>

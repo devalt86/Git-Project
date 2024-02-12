@@ -7,30 +7,28 @@
     <link rel="stylesheet" href="gitproject.css">
     <title>Installation</title>
 </head>
-<body id="bodypages">
-    <!--<nav>
+<body>
+    <nav>
         <ul id="menu">
-            <li><a href="git-project.html">Home</a></li>
-            <li><a href="#">Set-up and Install</a></li>
-            <li><a href="git-operations.html">Git Operations</a></li>
-            <li><a href="remote-repository.html">Remote Repository</a></li>
-        </ul> 
-    </nav> DELETE TOP NAV -->
+            <li><img src="images/woman.png" class="logo" width="60" height="60"></li>
+            <li>Welcome!</li>
+        </ul>
+    </nav><!-- closing for navigation -->
 
     <div class="sidenav"><!-- side nav -->
         <a href="index.html">Home</a>
-        <a href="#">Set-up and Install</a>
+        <a href="#">Set-up and Install <</a>
         <a href="git-operations.html">Git Operations</a>
         <a href="remote-repository.html">Remote Repository</a>
       </div><!-- closing for side nav -->
 
     <h1>Set-up Git and VS Code</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    <p class="steps">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
         irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <h2>Install homebrew</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    <p class="steps">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     <ol id="numberlist">
         <li>Navigate to the Homebrew website to copy the code to install. (https://brew.sh)</li>
@@ -45,25 +43,27 @@
                 <li>A Sorry, try again. prompt will appear as if it is wrong. You can just type your password again.</li>
             </ul>
     </ol>
-    <p>The Homebrew installation begins, letting you know what is installed and what directories are created. 
+    <p class="steps">The Homebrew installation begins, letting you know what is installed and what directories are created. 
         Mid-installation, you can press Return (Enter) to continue. The entire installation may take about 30 minutes.</p>
 
-    <p>You can then follow the next steps in Terminal after installation.</p>
-    <p>Run these two commands in your terminal to add Homebrew to your PATH:
-        (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/ashley/.zprofile
-        eval "$(/opt/homebrew/bin/brew shellenv)"
-        - Run brew help to get started
-        - Further documentation: https://docs.brew.sh
-        Should be just one line: eval "$(/opt/homebrew/bin/brew shellenv)"</p>
+    <p class="steps">You can then follow the next steps in Terminal after installation.</p>
+    <p class="steps">
+        <div id="note">
+        <b>Note:</b> Your Terminal might suggest "Run these two commands in your terminal to add Homebrew to your PATH:..."
+        There should be just one line to run: /opt/homebrew/bin/brew shellenv
+        </div>
+    </p>
     <h2>Install Git and Configure within VS Code</h2>
-    <p>Install Git by typing the command: brew install git.</p>
-    <p>Configure Git by setting your username and password: 
-        git config --global user.name  
-        git config --global user.email  
-        You can check if your username and password are configured with: git config --global --list</p>
+    <p class="steps">Install Git by typing the command <code>brew install git</code>.</p>
+    <p class="steps">Configure Git by setting up your username and password:</p>
+        <ul id="standalonebullet">
+            <li>git config --global user.name</li>
+            <li>git config --global user.email</li>
+        </ul> 
+    <p class="steps">You can check if your username and password are configured with [git config --global --list].</p>
     
     <h2>Create and Clone a GitHub Repository </h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    <p class="steps">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     <ol id="numberlist">
         <li>Sign into GitHub.</li> 
@@ -72,7 +72,7 @@
         <li>Navigate to VS Code and click the Source Control icon in the far-left Activity Bar.</li>
         <li>Click Clone Repository.</li>
             <ul id="bulletlist">
-                <li>If you already have a folder open, you may not see the Open Folder and Clone Repository options.</li> 
+                <li>If you already have a folder open, you may not see the <b>Open Folder</b> and <b>Clone Repository</b> options.</li> 
                 <li>You can click File > New Window > Source Control icon to show these options.</li>
             </ul>
         <li>Navigate back to GitHub and copy the URL to the repository you just created.</li> 
@@ -81,14 +81,14 @@
             <ul id="bulletlist">
                 <li>You should be redirected to GitHub. </li>
                 <li>Authorize GitHub for VS Code if you have never done so.</li>
-                <li>If Do you want to allow this website to open “Visual Studio Code”? pops up, you can click Allow.</li>
-                <li>Allow an extension to open this URI? may also pop up, you can click Open.</li>
-                <li>Clicking Open will redirect you back to VS Code.</li>
+                <li>If [Do you want to allow this website to open “Visual Studio Code”?] pops up, you can click <b>Allow</b>.</li>
+                <li>"Allow an extension to open this URI?" may also pop up, you can click <b>Open</b>.</li>
+                <li>Clicking <b>Open</b> will redirect you back to VS Code.</li>
             </ul>
         <li>For the repository name, click the URL that displays.</li>
         <li>In Finder, choose a place to save your repository.</li>
     </ol>
-    <p>You can now open your GitHub repository in VS Code</p>
-
+    <p class="steps">You can now open your GitHub repository in VS Code.</p>
+    <br>
 </body>
 </html>

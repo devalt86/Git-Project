@@ -7,21 +7,28 @@
     <title>Git Operations</title>
     <link rel="stylesheet" href="gitproject.css">
 </head>
-<body id="bodypages">
+<body>
+    <nav>
+        <ul id="menu">
+            <li><img src="images/woman.png" class="logo" width="60" height="60"></li>
+            <li>Welcome!</li>
+        </ul>
+    </nav><!-- closing for navigation -->
+
     <div class="sidenav"><!-- side nav -->
         <a href="index.html">Home</a>
         <a href="install.html">Set-up and Install</a>
-        <a href="#">Git Operations</a>
+        <a href="#">Git Operations <</a>
         <a href="remote-repository.html">Remote Repository</a>
       </div><!-- closing for side nav -->
 
       <h1>Working on Files With Git and VS Code</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      <p class="steps">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
         irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <h2>Basic Git Operations in VS Code</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      <p class="steps">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <ol id="numberlist">
             <li>In the VS Code menu bar, click Terminal</li>
@@ -43,18 +50,23 @@
                     <li><b>Push</b>: git push origin <name of branch> pushes the files to the GitHub repository to merge with the main branch.</li>
                 </ul>
         </ol>
-        <p>The command git push -u origin [branch] is useful when pushing a new branch. This creates an upstream tracking branch with a lasting 
+        <p class="steps">The command git push -u origin [branch] is useful when pushing a new branch. This creates an upstream tracking branch with a lasting 
             relationship to your local branch.</p>
         
         <h2>Branching with VS Code</h2>
-        <p>When you created your first repository in GitHub, the main branch was automatically created. 
+        <p class="steps">When you created your first repository in GitHub, the main branch was automatically created. 
             You want to switch branches before beginning any changes to a project, so your main branch is not affected.</p>
-        <p>To do that, you can type git checkout -b [naming convention] (ex. git checkout -b ashley/creating-a-how-to).
-            You can also click the ellipses (…) at the top of the VS Code side navigation, click Checkout to…, Create a new branch from…, then type the command.</p>
-        <p>At this point, you can add new folders and files, or make changes to/update your files. 
+        <p class="steps">To do that, you can type git checkout -b [naming convention] (ex. git checkout -b ashley/creating-a-how-to).
+            You can also click the ellipses (…) at the top of the VS Code side navigation, click Checkout to… > Create a new branch from… > type the command.</p>
+        <p class="steps">At this point, you can add new folders and files, or make changes to/update your files. 
             If you are working on multiple tasks at once, you can create a new branch for each task and switch between branches so one does 
             not affect the other, or the main branch.</p>
-        <p>Note: You want to commit changes in one branch before switching to another. This prevents tasks in one branch from being mixed in with tasks from another branch.</p>
+        <p class="steps">
+            <div id="note">
+            <b>Note:</b>You want to commit changes in one branch before switching to another. This prevents tasks in one branch from being mixed 
+            in with tasks from another branch.
+            </div>
+        </p>
 
 </body>
 </html>
